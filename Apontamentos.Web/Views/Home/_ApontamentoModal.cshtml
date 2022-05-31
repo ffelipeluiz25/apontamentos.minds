@@ -1,0 +1,25 @@
+﻿@model List<Apontamentos.Web.Models.ApontamentoViewModel>
+@{
+    Layout = null;
+}
+<table id="ApontamentosGrid" class="table" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Dia da Semana</th>
+            <th>Responsável</th>
+            <th>Tarefas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td id="dtDataFormatada">@item.dateFormatada</td>
+                <td>@item.diaDaSemana</td>
+                <td>@item.teamMember</td>
+                <td><button class="btn btn-secondary m-1 details" href="javascript:;">Detalhes</button></td>
+            </tr>
+        }
+    </tbody>
+</table>

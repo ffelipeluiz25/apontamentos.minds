@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Apontamentos Azure";
+}
+<div id="divContentApontamentos">
+    <div class="row">
+        <fieldset class="border p-2">
+            <legend class="float-none w-auto">Filtros</legend>
+            <div class="row">
+                <div class="col-4">
+                    <h6 id="lblMes">Mês:</h6>
+                    <select id="selMes" class="form-select" aria-label="Default select example">
+                        <option value="01">Janeiro</option>
+                        <option value="02">Fevereiro</option>
+                        <option value="03">Março</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Maio</option>
+                        <option value="06">Junho</option>
+                        <option value="07">Julho</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <h6 id="lblAno">Ano:</h6>
+                    <select id="selAno" class="form-select" aria-label="Selecione o Ano">
+                        <option selected value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <h6 id="lblResponsavel">Responsavel:</h6>
+                    <select id="selResponsavel" class="form-select" aria-label="Selecione o Responsavel">
+                        <option value="Andre Castro">Andre Castro</option>
+                        <option value="Gabriel Guerra">Gabriel Guerra</option>
+                        <option value="Giulia Delarissa">Giulia Delarissa</option>
+                        <option value="joao.prata">Joao Prata</option>
+                        <option value="Leticia Fraga">Leticia Fraga</option>
+                        <option value="Marcelo Rabelo Lopes">Marcelo Rabelo Lopes</option>
+                        <option value="Thiago">Thiago</option>
+                        <option value="Vinícius Bandeira">Vinícius Bandeira</option>
+                        <option value="vitor.tramontina">Vitor Tramontina</option>
+                        <option value="William Dias">William Dias</option>
+                        <option selected value="luiz.felipe">Luiz Felipe</option>
+                    </select>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </fieldset>
+    </div>
+    <br />
+    <br />
+    <div id="divTabela" class="row">
+    </div>
+</div>
+<div class="modal fade" id="detalhesModal" data-backdrop="static" tabindex="-1" role="dialog" data-st aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalhes das Tarefas</h5>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary fechar" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
